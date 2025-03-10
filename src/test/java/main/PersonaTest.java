@@ -86,18 +86,18 @@ public class PersonaTest {
         assertEquals(expResult, result);
     }
 
-//    /**
-//     * Test of getEdad method, of class Persona.
-//     */
-//    @Test
-//    public void testGetEdad() {
-//        System.out.println("getEdad");
-//        Persona instance = new Persona();
-//        int expResult = 0;
-//        int result = instance.getEdad();
-//        assertEquals(expResult, result);
-//    }
-//
+    /**
+     * Test of getEdad method, of class Persona.
+     */
+    @Test
+    public void testGetEdad() {
+        System.out.println("getEdad");
+        Persona instance = new Persona();
+        int expResult = 35;
+        int result = instance.getEdad();
+        assertEquals(expResult, result);
+    }
+
 //    /**
 //     * Test of toString method, of class Persona.
 //     */
