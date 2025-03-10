@@ -98,16 +98,16 @@ public class PersonaTest {
         assertEquals(expResult, result);
     }
 
-//    /**
-//     * Test of toString method, of class Persona.
-//     */
-//    @Test
-//    public void testToString() {
-//        System.out.println("toString");
-//        Persona instance = new Persona();
-//        String expResult = "";
-//        String result = instance.toString();
-//        assertEquals(expResult, result);
-//    }
-    
+    /**
+     * Test of toString method, of class Persona.
+     */
+    @Test
+    public void testToString() {
+        System.out.println("toString");
+        Persona instance = new Persona(12345678, "Carlos", 'M', 1, 10, 2009);
+        String expResult = "12345678-Z Carlos   15";
+        String result = instance.toString();
+        assertEquals(expResult, result);
+    }
+
 }
