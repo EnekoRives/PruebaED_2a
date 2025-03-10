@@ -74,18 +74,18 @@ public class PersonaTest {
     }
 
 
-//    /**
-//     * Test of getNacimiento method, of class Persona.
-//     */
-//    @Test
-//    public void testGetNacimiento() {
-//        System.out.println("getNacimiento");
-//        Persona instance = new Persona();
-//        LocalDate expResult = null;
-//        LocalDate result = instance.getNacimiento();
-//        assertEquals(expResult, result);
-//    }
-//
+    /**
+     * Test of getNacimiento method, of class Persona.
+     */
+    @Test
+    public void testGetNacimiento() {
+        System.out.println("getNacimiento");
+        Persona instance = new Persona();
+        LocalDate expResult = LocalDate.of(1990, 1, 1);
+        LocalDate result = instance.getNacimiento();
+        assertEquals(expResult, result);
+    }
+
 //    /**
 //     * Test of getEdad method, of class Persona.
 //     */
