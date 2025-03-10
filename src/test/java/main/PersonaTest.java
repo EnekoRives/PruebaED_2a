@@ -60,21 +60,20 @@ public class PersonaTest {
     }
 
 
-//    /**
-//     * Test of getGenero method, of class Persona.
-//     */
-//    @Test
-//    public void testGetGenero() {
-//        System.out.println("getGenero");
-//        Persona instance = new Persona();
-//        char expResult = ' ';
-//        char result = instance.getGenero();
-//        assertEquals(expResult, result);
-//        // TODO review the generated test code and remove the default call to fail.
-//        fail("The test case is a prototype.");
-//    }
-//
-//
+    /**
+     * Test of getGenero method, of class Persona.
+     */
+    @Test
+    public void testGetGenero() {
+        System.out.println("getGenero");
+        Persona instance = new Persona();
+        instance.setGenero('M');
+        char expResult = 'M';
+        char result = instance.getGenero();
+        assertEquals(expResult, result);
+    }
+
+
 //    /**
 //     * Test of getNacimiento method, of class Persona.
 //     */
