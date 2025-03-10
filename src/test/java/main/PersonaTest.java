@@ -46,19 +46,20 @@ public class PersonaTest {
     }
 
 
-//    /**
-//     * Test of getNombre method, of class Persona.
-//     */
-//    @Test
-//    public void testGetNombre() {
-//        System.out.println("getNombre");
-//        Persona instance = new Persona();
-//        String expResult = "";
-//        String result = instance.getNombre();
-//        assertEquals(expResult, result);
-//    }
-//
-//
+    /**
+     * Test of getNombre method, of class Persona.
+     */
+    @Test
+    public void testGetNombre() {
+        System.out.println("getNombre");
+        Persona instance = new Persona();
+        instance.setNombre("Carlos");
+        String expResult = "Carlos";
+        String result = instance.getNombre();
+        assertEquals(expResult, result);
+    }
+
+
 //    /**
 //     * Test of getGenero method, of class Persona.
 //     */
