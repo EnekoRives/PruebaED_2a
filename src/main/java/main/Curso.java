@@ -14,11 +14,18 @@ public class Curso {
 
     private String nombre;
     private TreeSet<Persona> listaAlumnos;
-
+    /**
+     * Te da el nombre del curso
+     * @return un string
+     */
     protected String getNombre() {
         return nombre;
     }
 
+    /**
+     * Costuctor del objeto
+     * @param nombre 
+     */
     public Curso(String nombre) {
         this.nombre = nombre;
         listaAlumnos = new TreeSet<>();
@@ -35,6 +42,10 @@ public class Curso {
         return s;
     }
 
+    /**
+     * Añade un alumno al treeSet
+     * @param p 
+     */
     public void aniadirAlumno(Persona p) {
         listaAlumnos.add(p);
     }
