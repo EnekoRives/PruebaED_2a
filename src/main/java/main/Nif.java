@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package main;
 
 /**
@@ -18,16 +14,25 @@ public class Nif {
             = {'T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D',
                 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L',
                 'C', 'K', 'E'};
-
+    /**
+     * Funcion que calcula la letra del nif en base a su numero
+     * @param numero
+     * @return 
+     */
     private static char calcularLetra(int numero) {
         return LETRAS[numero % 23];
     }
-
+    /**
+     * Constructor por defecto que da un nif invalido
+     */
     protected Nif() {
         this.numero = 0;
         this.letra = ' ';
     }
-
+    /**
+     * Constructor que toma el numero nif y calcula la letra
+     * @param numero el numero del nif
+     */
     protected Nif(int numero) {
         this.numero = numero;
         this.letra = calcularLetra(numero);
