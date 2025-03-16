@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package main;
 
 import java.time.LocalDate;
@@ -14,7 +10,9 @@ public class Persona implements Comparable<Persona> {
     private String nombre;
     private char genero;
     private LocalDate nacimiento;
-
+    /**
+     * Constructor por defecto crea una persona cn los valores invalidos y una fecha de nacimiento del 1990/1/1
+     */
     public Persona() {
         nif = new Nif();
         nombre = "";
@@ -26,7 +24,15 @@ public class Persona implements Comparable<Persona> {
         this();
         this.nif = new Nif(nif);
     }
-
+    /**
+     * Constuctor completo con la fecha de nacimiento dividida en dia mes año
+     * @param nif
+     * @param nombre
+     * @param genero
+     * @param dia
+     * @param mes
+     * @param ano 
+     */
     public Persona(int nif, String nombre, char genero,
             int dia, int mes, int ano) {
         this.nif = new Nif(nif);
